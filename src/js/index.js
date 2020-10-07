@@ -16,6 +16,7 @@ window.onload = () => {
     document.querySelector(".bottom-suit").style.color = "red";
     document.querySelector(".num-letter").style.color = "red";
   }
+
   document.querySelector(".top-suit").innerHTML = design;
   document.querySelector(".bottom-suit").innerHTML = design;
   document.querySelector(".num-letter").innerHTML = randomNumbers();
