@@ -5,11 +5,18 @@ window.onload = () => {
   let suits = ["&spades;", "&clubs;", "	&hearts;", "&diams;"];
 
   function randomSuits() {
-    document.querySelector(".top-suit").innerHTML = randomSuits(suits);
-    console.log(suits[Math.floor(Math.random() * suits.length)]);
+    return suits[Math.floor(Math.random() * suits.length)];
   }
   function randomNumbers() {
-    document.querySelector(".num-letter").innerHTML = randomNumbers(numbers);
-    console.log(numbers[Math.floor(Math.random() * numbers.length)]);
+    return numbers[Math.floor(Math.random() * numbers.length)];
   }
+  var design = randomSuits();
+  if (design == "&hearts;" || design == "&diams;") {
+    document.querySelector(".top-suit").style.color = "red";
+    document.querySelector(".bottom-suit").style.color = "red";
+    document.querySelector(".num-letter").style.color = "red";
+  }
+  document.querySelector(".top-suit").innerHTML = design;
+  document.querySelector(".bottom-suit").innerHTML = design;
+  document.querySelector(".num-letter").innerHTML = randomNumbers();
 };
