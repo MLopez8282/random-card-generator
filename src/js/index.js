@@ -11,7 +11,7 @@ window.onload = () => {
     return numbers[Math.floor(Math.random() * numbers.length)];
   }
   var design = randomSuits();
-  console.log(design);
+
   if (design == "&hearts;" || design == "&diams;") {
     document.querySelector(".top-suit").style.color = "red";
     document.querySelector(".bottom-suit").style.color = "red";
