@@ -13,9 +13,9 @@ window.onload = () => {
   var design = randomSuits();
 
   if (design == "&hearts;" || design == "&diams;") {
-    document.querySelector(".top-suit").style.color = "red";
-    document.querySelector(".bottom-suit").style.color = "red";
-    document.querySelector(".num-letter").style.color = "red";
+    document.querySelector(".top-suit").style.color = "rgb(111, 1, 1)";
+    document.querySelector(".bottom-suit").style.color = "rgb(111, 1, 1)";
+    document.querySelector(".num-letter").style.color = "rgb(111, 1, 1)";
   }
 
   document.querySelector(".top-suit").innerHTML = design;
