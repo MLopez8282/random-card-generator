@@ -8,7 +8,9 @@ window.onload = () => {
     return suits[Math.floor(Math.random() * suits.length)];
   }
   function randomNumbers() {
-    return numbers[Math.floor(Math.random() * numbers.length)];
+    {
+      return numbers[Math.floor(Math.random() * numbers.length)];
+    }
   }
   var design = randomSuits();
 
@@ -16,6 +18,10 @@ window.onload = () => {
     document.querySelector(".top-suit").style.color = "rgb(111, 1, 1)";
     document.querySelector(".bottom-suit").style.color = "rgb(111, 1, 1)";
     document.querySelector(".num-letter").style.color = "rgb(111, 1, 1)";
+  } else if (suits) {
+    document.querySelector(".top-suit").style.color = "black";
+    document.querySelector(".bottom-suit").style.color = "black";
+    document.querySelector(".num-letter").style.color = "black";
   }
 
   document.querySelector(".top-suit").innerHTML = design;
